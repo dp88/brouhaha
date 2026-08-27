@@ -10,5 +10,3 @@ multiple-versions = "warn"
 [sources]
 unknown-registry = "deny"
 unknown-git = "deny"
-# Until spacewalk is on crates.io; drop with the git dependency at release.
-allow-git = ["https://github.com/dp88/spacewalk"]
