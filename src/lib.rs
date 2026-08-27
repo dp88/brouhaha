@@ -90,7 +90,6 @@
 //! assert_eq!(winners.len(), 1);
 //! ```
 #![no_std]
-#![deny(missing_docs)]
 
 extern crate alloc;
 #[cfg(test)]

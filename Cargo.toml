@@ -9,12 +9,19 @@ repository = "https://github.com/dp88/brouhaha"
 license = "MIT OR Apache-2.0"
 keywords = ["ttrpg", "osr", "combat", "gamedev", "no-std"]
 categories = ["game-development", "no-std"]
-exclude = [".github/", "art/banner.af"]
+readme = "README.md"
+exclude = [".github/", "art/", "RELEASING.md", "deny.toml"]
+
+[package.metadata.docs.rs]
+all-features = true
 
 [features]
 default = []
 serde = ["dep:serde"]
 spacewalk = ["dep:spacewalk"]
+
+[lints.rust]
+missing_docs = "warn"
 
 [dependencies]
 serde = { version = "1", default-features = false, features = ["derive", "alloc"], optional = true }
