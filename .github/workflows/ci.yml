@@ -35,6 +35,7 @@ jobs:
       # overflow checks could mask an arithmetic slip that release keeps,
       # so the suite must pass against the optimized profile too.
       - run: cargo test --release --all-features --all-targets
+      - run: cargo test --release --all-features --doc
 
   # The crate is `#![no_std]`. This build is what keeps that true — a host
   # build would not notice `std` creeping back in through a dependency's
