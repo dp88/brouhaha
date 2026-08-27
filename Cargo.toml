@@ -18,7 +18,8 @@ spacewalk = ["dep:spacewalk"]
 
 [dependencies]
 serde = { version = "1", default-features = false, features = ["derive", "alloc"], optional = true }
-spacewalk = { version = "0.1", path = "../spacewalk", optional = true }
+# Not yet on crates.io; the version readies the manifest for when it is.
+spacewalk = { version = "0.1", git = "https://github.com/dp88/spacewalk", optional = true }
 
 [dev-dependencies]
 serde_json = "1"
