@@ -98,6 +98,7 @@ assert!(!melee.log().all().is_empty());
 - [`tests/`](tests/) — scenario tests: duels, kiting, spell disruption,
   morale breaks, grid fights, command replay.
 - [CHANGELOG](CHANGELOG.md)
+- [Issue tracker](https://github.com/dp88/brouhaha/issues)
 
 ## License
 
